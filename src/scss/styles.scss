@@ -38,10 +38,43 @@ body {
         :first-child {
             font-weight: 700;
         }
-        img {
-            height: 20px;
+        .arrow-down {
+            height: 10px;
         }
     }
+    &__link {
+        .link__title {
+            display: flex;
+            align-items: baseline;
+        }
+    }
+}
+
+.center {
+    text-align: center;
+
+    h2 {
+        font-weight: 700;
+    }
+    ul {
+        li {
+            margin-bottom: 20px;
+            :last-child {
+                margin: 0;
+            }
+        }
+    }
+}
+
+#form-link {
+    background-color: #875626;
+    display: block;
+    width: 80%;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    align-self: center;
+    margin-bottom: 5vh;
 }
 
 .wrapper {
@@ -110,6 +143,40 @@ body {
         font-size: 34pt;
         margin: 0;
     }
+    &__squad {
+        width: 100%;
+    }
+    &__container {
+        display: flex;
+        flex-direction: column;
+    }
+    &__subtitle {
+        font-size: 21px;
+    }
+    &__para {
+        font-size: 16px;
+    }
+
+    &__row {
+        display: flex;
+        max-width: 100%;
+        justify-content: space-between;
+        gap: 2vw;
+        margin-bottom: 10vh;
+    }
+    &__column {
+        display: flex;
+        flex: 1 1;
+        text-align: center;
+        flex-direction: column;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.requirements {
+    list-style-type: disc;
 }
 
 .footer {
@@ -133,4 +200,38 @@ body {
 .redColored {
     background-color: black;
     color: white;
+    .arrow-down {
+        filter: invert(100%) sepia(0%) saturate(4653%) hue-rotate(301deg) brightness(104%) contrast(101%);
+    }
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: -110%;
+    width: 300%;
+    overflow: auto;
+    background-color: black;
+    box-shadow: 0px 0px 10px 5px rgb(0 0 0 / 40%);
+    padding: 20px 40px;
+    flex-direction: column;
+    gap: 20px;
+    transition: ease-in-out 0.5s;
+}
+.dropdown:hover .dropdown-content {
+    display: flex;
+}
+.dropdown-content a {
+    color: white;
+    text-decoration: none;
+    white-space: nowrap; /* Запрещаем перенос строк */
+    overflow: hidden; /* Обрезаем все, что не помещается в область */
+    text-overflow: ellipsis; /* Добавляем многоточие */
+}
+.dropdown-content a:hover {
+    color: gray;
 }

@@ -10,22 +10,32 @@
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="/src/images/logo.png">
+
     <link
         href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Playfair+Display:wght@400;700&display=swap"
         rel="stylesheet">
-
 </head>
 
 <body>
     <header class="header">
         <a href="index.html" class="header__logo">
-            <img src="./images/logo.png" alt="">
+            <img src="./images/logo.png" alt="logo">
             <h2 class="header__title">Офис Управления Шерифа Округа Блэйн</h2>
         </a>
         <ul class="header__navbar">
-            <li class="header__link"><a href="#">Главная <span><img src="./images/down-arrow.png" alt=""></span> </a>
+            <li class="header__link">
+                <div class="dropdown">
+                    <a class="link__title" href="index.html">Главная <img class="arrow-down"
+                            src="./images/Arrow-down.svg" alt=""></a>
+                    <div class="dropdown-content">
+                        <a href="/src/about.html">Об Офисе Управления Шерифа Округа Блэйн</a>
+                        <a href="/src/specializations.html">Отделы</a>
+                        <a href="/src/candidates.html">Отбор кандидатов</a>
+                    </div>
+                </div>
             </li>
-            <li class="header__link"><a href="#">Правовые нормы штата</a></li>
+            <li class="header__link"><a class="link__title" href="#">Правовые нормы штата</a></li>
         </ul>
 
     </header>
@@ -38,7 +48,7 @@
             </section>
             <section class="links-section">
                 <div class="links-section__item">
-                    <a href="#"><img src="./images/gif/star.gif" alt=""></a>
+                    <a href="/src/about.html"><img src="./images/gif/star.gif" alt=""></a>
                     <h3 class="links-section__title">Об Офисе Управления Шерифа Округа Блэйн</h3>
                 </div>
                 <div class="links-section__item">
