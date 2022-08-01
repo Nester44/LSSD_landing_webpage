@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 body {
   background-color: #fff1cc;
   font-family: "Oswald", sans-serif;
@@ -17,29 +18,36 @@ body {
   padding: 1vh 10vh;
   justify-content: space-between;
 }
+
 .header__logo {
   display: flex;
   align-items: center;
   gap: 30px;
 }
+
 .header__logo img {
   height: 100%;
 }
+
 .header__title {
   font-size: 24px;
 }
+
 .header__navbar {
   font-size: 18px;
   gap: 30px;
   display: flex;
   align-items: center;
 }
+
 .header__navbar :first-child {
   font-weight: 700;
 }
+
 .header__navbar .arrow-down {
   height: 10px;
 }
+
 .header__link .link__title {
   display: flex;
   align-items: baseline;
@@ -48,12 +56,15 @@ body {
 .center {
   text-align: center;
 }
+
 .center h2 {
   font-weight: 700;
 }
+
 .center ul li {
   margin-bottom: 20px;
 }
+
 .center ul li :last-child {
   margin: 0;
 }
@@ -87,9 +98,11 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+
 .main-greetings__stars {
   max-height: 105px;
 }
+
 .main-greetings__title {
   font-family: "Playfair Display", serif;
   font-weight: 700;
@@ -103,15 +116,18 @@ body {
   justify-content: center;
   gap: 30px;
 }
+
 .links-section__item {
   display: flex;
   flex-direction: column;
   flex: 0 0 20vh;
 }
+
 .links-section__item img {
   margin: 0 auto;
   width: 100%;
 }
+
 .links-section__item h3 {
   text-align: center;
   font-size: 16px;
@@ -122,34 +138,44 @@ body {
   display: flex;
   gap: 5vh;
 }
+
 .main-info__images {
   flex: 0 0 45%;
 }
+
 .main-info__images img {
   width: 100%;
 }
+
 .main-info__body {
   font-size: 12pt;
 }
+
 .main-info__title {
   font-family: "Playfair Display", serif;
   font-weight: 700;
   font-size: 34pt;
   margin: 0;
 }
+
 .main-info__squad {
   width: 100%;
 }
+
 .main-info__container {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
+
 .main-info__subtitle {
   font-size: 21px;
 }
+
 .main-info__para {
   font-size: 16px;
 }
+
 .main-info__row {
   display: flex;
   max-width: 100%;
@@ -157,12 +183,14 @@ body {
   gap: 2vw;
   margin-bottom: 10vh;
 }
+
 .main-info__column {
   display: flex;
   flex: 1 1;
   text-align: center;
   flex-direction: column;
 }
+
 .main-info__column img {
   width: 100%;
 }
@@ -177,14 +205,17 @@ body {
   margin: 7vh 0 3vh 0;
   height: 7vh;
 }
+
 .footer__logo {
   display: flex;
   align-items: center;
   gap: 30px;
 }
+
 .footer__logo img {
   height: 100%;
 }
+
 .footer__mail {
   color: #d19f72;
 }
@@ -193,6 +224,7 @@ body {
   background-color: black;
   color: white;
 }
+
 .redColored .arrow-down {
   filter: invert(100%) sepia(0%) saturate(4653%) hue-rotate(301deg) brightness(104%) contrast(101%);
 }
@@ -223,9 +255,12 @@ body {
 .dropdown-content a {
   color: white;
   text-decoration: none;
-  white-space: nowrap; /* Запрещаем перенос строк */
-  overflow: hidden; /* Обрезаем все, что не помещается в область */
-  text-overflow: ellipsis; /* Добавляем многоточие */
+  white-space: nowrap;
+  /* Запрещаем перенос строк */
+  overflow: hidden;
+  /* Обрезаем все, что не помещается в область */
+  text-overflow: ellipsis;
+  /* Добавляем многоточие */
 }
 
 .dropdown-content a:hover {
